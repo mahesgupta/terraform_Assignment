@@ -3,15 +3,10 @@ name: "Terraform Infrastructure Change Management Pipeline with GitHub Actions"
 on:
  push:
    branches:
-   - develop
-   paths:
-   - terraform/**
- pull_request:
-   branches:
    - main
-   - test
    paths:
    - terraform/**
+ 
  
 env:
  # verbosity setting for Terraform logs
