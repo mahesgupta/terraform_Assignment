@@ -72,7 +72,7 @@ resource "aws_instance" "private_vm" {
     inline = [
       "sudo apt-get update",
       "sudo apt-get install -y nginx",
-      "sudo systemctl start nginx"
+      "sudo systemctl start nginx"   
     ]
   }
 }
